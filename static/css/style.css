@@ -1,0 +1,615 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'SpaceGrotesk', sans-serif;
+  position: relative;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body > * {
+  margin: 0 16px;
+}
+
+.on-hover:hover,
+.social-icon.on-hover:hover path {
+  color: #4EE1A0;
+  fill: #4EE1A0;
+}
+
+.circle {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 16rem;
+  right: -6.8rem;
+  z-index: 1;
+}
+
+.rings {
+  position: absolute;
+  height: 130px;
+  width: 530px;
+}
+
+.top-rings {
+  top: 10rem;
+  left: -28rem;
+}
+
+.mid-rings {
+  top: 76rem;
+  right: -21rem;
+}
+
+.bottom-rings {
+  position: absolute;
+  bottom: 16rem;
+  left: -25rem;
+}
+
+.contact {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+}
+
+hr {
+  border: 1px solid #fff;
+  width: 90%;
+  align-self: center;
+}
+
+.underline {
+  text-decoration: underline #4EE1A0;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  /* margin-bottom: 60px; */
+}
+
+.right-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main
+.img-top {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+main .name,
+footer .main-header .name {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+main .social,
+footer .social {
+  width: 174px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.cesar-img {
+  height: 383px;
+  opacity: .5;
+}
+
+.intro {
+  padding: 40px 16px;
+}
+
+.intro h1 {
+  font-size: 40px;
+}
+
+.intro p:nth-of-type(1) {
+  margin: 24px 0;
+}
+
+.experience-section {
+  height: 604px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.language {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.experience {
+  font-size: 16px;
+  color: #d9d9d9;
+  margin-top: 2px;
+}
+
+.projects-section {
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+.projects-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.projects-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.projects-header p {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.project-card {
+  height: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-header img {
+  height: 253px;
+}
+
+.card-header
+.overlay {
+  position: absolute; /* this is needed for the overlay to be positioned correctly */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* this sets the background color of the overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden; /* this hides the overlay by default */
+}
+
+.card-header
+.overlay a {
+  color: #fff;
+  font-size: 16px;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-decoration:underline #4EE1A0;
+}
+
+.card-header
+.overlay a:hover {
+  color: #4EE1A0;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.project-languages {
+  display: flex;
+  margin-top: 8px;
+}
+
+.project-languages p {
+  margin-right: 18px;
+  font-size: 18px;
+  color: #d9d9d9;
+}
+
+.project-samples {
+  display: flex;
+  margin-top: 20px;
+}
+
+.project-samples p:nth-of-type(1) {
+  margin-right: 30px;
+}
+
+.contact-footer {
+  padding: 60px 0;
+  margin: 0;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-footer
+.footer-container {
+  margin-bottom: 88px;
+}
+
+.contact-footer h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-footer p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #d9d9d9;
+}
+.contact-footer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 327px;
+  width: 348px;
+  margin: 50px auto 0 auto;
+  position: relative;
+}
+
+.contact-footer > * {
+  margin: 0 16px;
+}
+
+.valid{
+  border-bottom: 2px solid #4EE1A0;
+}
+.invalid{
+  border-bottom: 2px solid #FF6F5B;
+}
+
+form input,
+form textarea {
+  width: 343px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  padding: 2px 16px;
+  /* font-family: initial; */
+  outline: none;
+}
+
+form input {
+  height: 43px;
+}
+
+form span {
+  margin: 2px 0 10px 0;
+  text-align: right;
+  color: #FF6F5B;
+}
+
+form textarea {
+  height: 107px;
+  font-family: inherit;
+}
+
+::placeholder {
+  font-size: 16px;
+  /* font-family: initial; */
+  color: #fff;
+  opacity: 0.5;
+}
+
+form a {
+  align-self: flex-end;
+  font-size: 16px;
+  margin-top: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-footer
+.main-header {
+  margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  body > *,
+  body > .projects-section {
+    margin: 0 30px;
+  }
+
+  .circle {
+    top: 30rem;
+  }
+
+  .mid-rings {
+    top: 68rem;
+  }
+
+  .bottom-rings {
+    left: -28rem;
+    bottom: 10rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+  }
+
+  main
+  .img-top {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  main
+  .img-top
+  .social {
+    margin: 0;
+  }
+  
+  main
+  .img-top
+  .social
+  .social-icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  main
+  .img-top
+  .name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  main
+  .right-container {
+    width: 40%;
+  }
+
+  main
+  .right-container
+  .cesar-img {
+    height: 600px;
+  }
+
+  main
+  .intro {
+    position: absolute;
+    text-align: left;
+    padding: 0;
+    padding-left: 32px;
+  }
+
+  main
+  .intro
+  h1 {
+    font-size: 72px;
+    font-weight: bold;
+    margin-top: 150px;
+    width: 65%;
+  }
+
+  main
+  .intro
+  .about {
+    width: 60%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 60px;
+  }
+
+
+  hr.first {
+    margin-top: 60px;
+  }
+
+  hr:nth-of-type(2) {
+    display: none;
+  }
+
+  .experience-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 30px;
+    text-align: left;
+  }
+
+  .experience-section
+  .language {
+    font-size: 56px;
+  }
+
+  .experience-section
+  .experience {
+    font-size: 18px;
+  }
+
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+  }
+
+  .card-header img {
+    height: auto;
+    width: 100%;
+  }
+
+  .contact-footer > * {
+    margin: 0 162px;
+  }
+
+  .contact-footer
+  .footer-container {
+    width: 445px;
+  }
+
+  .contact-footer
+  .contact-description {
+    margin-bottom: 48px;
+  }
+
+  .contact-footer
+  h2 {
+    font-size: 72px;
+  }
+  
+  .contact-footer
+  p {
+    font-size: 18px;
+  }
+
+  .contact-footer
+  .main-header {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  .contact-footer
+  .main-header
+  .name {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .contact-footer
+  .main-header
+  .social {
+    width: 174px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 0;
+  }
+
+  .contact-footer
+  .main-header
+  .social
+  .social-icon {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body > *,
+  body .experience-section,
+  body .projects-section {
+    margin: 0 165px;
+  }
+
+  .circle {
+    right: 20rem;
+  }
+
+  .mid-rings {
+    top: 60rem;
+    right: -28rem;
+  }
+
+  main
+  .right-container
+  .cesar-img {
+    height: 720px;
+  }
+
+  main
+  .intro
+  h1 {
+    font-size: 88px;
+    width: 75%;
+  }
+
+  .experience-section {
+    grid-template-columns: repeat(3, 1fr);
+    height: 328px;
+  }
+
+  .projects-section
+  .card-header {
+    width: 100%;
+  }
+
+  .card-header:hover .overlay {
+    visibility: visible; /* this makes the overlay visible when the image is hovered over */
+  }
+
+  .projects-section
+  .project-samples {
+    display: none;
+  }
+
+  .contact-footer
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+  }
+
+  .contact-footer
+  .footer-container
+  .contact-description {
+    width: 42%;
+    text-align: left;
+  }
+
+  .contact-footer
+  .footer-container
+  form {
+    width: 42%;
+  }
+
+  .contact-footer
+  .main-header {
+    padding: 0 158px;
+  }
+}
