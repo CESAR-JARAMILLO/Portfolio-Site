@@ -11,23 +11,6 @@ def home():
 def thankyou():
     return render_template('thankyou.html')
 
-@app.route('/')
-def index():
-    return '''
-        <form id="myForm" autocomplete="off" action="/send_email" method="post">
-            <input type="text" name="name" id="name" placeholder="NAME">
-            <span id="name-error" class="error"></span>
-            <input type="email" name="email" id="email" placeholder="EMAIL">
-            <span id="email-error" class="error"></span>
-            <textarea name="message" id="message" placeholder="MESSAGE"></textarea>
-            <span id="message-error" class="error"></span>
-            <input type="submit" value="Send Message">
-        </form>
-    '''
-
-
-
-
 @app.route('/send_email', methods=['POST'])
 def send_email():
     name = request.form['name']
