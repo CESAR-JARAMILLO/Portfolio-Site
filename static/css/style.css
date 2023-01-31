@@ -1,5 +1,3 @@
-
-
 * {
   padding: 0;
   margin: 0;
@@ -135,13 +133,17 @@ footer .social {
 }
 
 .experience-section {
-  height: 604px;
+  /* height: 604px; */
   padding: 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+}
+
+.experience-container {
+  margin-bottom: 20px;
 }
 
 .language {
@@ -461,6 +463,7 @@ form a {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 30px;
     text-align: left;
+    padding: 10px;
   }
 
   .experience-section
@@ -577,7 +580,7 @@ form a {
 
   .experience-section {
     grid-template-columns: repeat(3, 1fr);
-    height: 328px;
+    /* height: 328px; */
   }
 
   .projects-section
