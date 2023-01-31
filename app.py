@@ -7,6 +7,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route("/thankyou/")
+def thankyou():
+    return render_template('thankyou.html')
+
 @app.route('/')
 def index():
     return '''
@@ -42,7 +46,7 @@ def send_email():
     server.sendmail("cesarjaramillodev@gmail.com", "cesarjaramillodev@gmail.com", msg)
     server.quit()
     
-    return 'Email sent!'
+    return render_template('thankyou.html')
 
 
 if __name__ == '__main__':
