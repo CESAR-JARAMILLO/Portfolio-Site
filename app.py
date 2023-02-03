@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import smtplib
+import os
 
 app = Flask(__name__)
 
@@ -16,11 +17,11 @@ def send_email():
     name = request.form['name']
     email = request.form['email']
     message = request.form['message']
-    
+
     # Send the email using smtplib
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("cesarjaramillodev@gmail.com", "pqcwduwnpryykidx")
+    server.login("cesarjaramillodev@gmail.com", os.environ.get('EMAIL_PASSWORD'))
     
     subject = "New message from " + name
     body = "From: " + name + "\nEmail: " + email + "\nMessage: " + message
