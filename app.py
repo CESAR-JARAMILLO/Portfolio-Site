@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, make_response
 import smtplib
 import os
 
@@ -31,6 +31,16 @@ def send_email():
     server.quit()
     
     return render_template('thankyou.html')
+
+@app.route('/resume')
+def resume():
+    with open("static/images/resume.pdf", "rb") as pdf:
+        response = make_response(pdf.read())
+        response.headers['Content-Type'] = 'application/pdf'
+        response.headers['Content-Disposition'] = 'inline; filename=resume.pdf'
+        return response
+
+
 
 
 if __name__ == '__main__':
