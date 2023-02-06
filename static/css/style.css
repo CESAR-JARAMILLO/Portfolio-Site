@@ -463,7 +463,8 @@ form a {
     flex-direction: row;
   }
 
-  .contact {
+  .contact,
+  .resume {
     margin: 0 24px 0 0;
   }
 
