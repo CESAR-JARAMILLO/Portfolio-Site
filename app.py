@@ -37,8 +37,9 @@ def resume():
     with open("static/images/resume.pdf", "rb") as pdf:
         response = make_response(pdf.read())
         response.headers['Content-Type'] = 'application/pdf'
-        response.headers['Content-Disposition'] = 'inline; filename=resume.pdf'
+        response.headers['Content-Disposition'] = 'attachment; filename=resume.pdf'
         return response
+
 
 
 
